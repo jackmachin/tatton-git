@@ -62,13 +62,6 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 
 ******************************************************************/
 /*********************
-CLEARFIX
-*********************/
-/* BOX SIZEING -
-========================================================================== */
-/* CSS3 PROPERTIES -
-========================================================================== */
-/*********************
 TRANSITION
 *********************/
 /*
@@ -90,7 +83,7 @@ BOX SIZING
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
 /*********************
-BOX  SHADOW
+CLEARFIX
 *********************/
 /*********************
 MAZE

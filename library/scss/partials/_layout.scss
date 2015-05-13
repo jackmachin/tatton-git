@@ -5,13 +5,6 @@ Author:
 Stylesheet: Layout Stylesheet
 ******************************************************************/
 
-*,
-*:after,
-*:before {
-  @include box-size;
-
-}
-
 body{
 	overflow-y: scroll;
 }
