@@ -53,7 +53,7 @@ body{
       #main, .main {}
 
         .home-content {
-            @include grid(5);
+            @include grid(5, $push:7);
             @include break(tablet, 12);
             @include break(mobile, 12);
         }
