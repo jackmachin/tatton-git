@@ -34,7 +34,7 @@ Stylesheet: Layout Stylesheet
     .nav {}
 
   #content {
-    @include grid(9, $margin:0);
+    @include grid(9, $margin:0%);
     @include break(tablet, 12);
     @include break(mobile, 12);
   }
