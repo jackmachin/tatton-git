@@ -79,8 +79,6 @@ $min-width: $break-mobile - 20px; /* Set min width with scroll bar */
 @mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
 
         float:#{$fold};
-        background: $orange;
-        cursor: pointer;
         padding: 20px;
         width: (100% / ($grid-size / $col-span)) - $margin ;
 
@@ -91,11 +89,6 @@ $min-width: $break-mobile - 20px; /* Set min width with scroll bar */
 
         @if $push > 0 {
             margin-#{$fold}: (((100%  / $grid-size) * $push) ) + ( $margin / ( $grid-size / $push) );
-        }
-
-        &:hover {
-            background: $brown;
-            color: $white;
         }
 }
 
