@@ -699,6 +699,21 @@ body {
   margin-left: 1%;
   margin-right: 1%; }
 
+.home {
+  float: left;
+  padding: 20px;
+  width: 39.66667%;
+  margin-left: 1%;
+  margin-right: 1%; }
+  @media only screen and (max-width: 767px) {
+    .home {
+      width: 98%;
+      margin: 1%; } }
+  @media only screen and (max-width: 480px) {
+    .home {
+      width: 98%;
+      margin: 1%; } }
+
 .footer {
   float: left;
   padding: 20px;

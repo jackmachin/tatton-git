@@ -46,11 +46,17 @@ body{
 
     #inner-content {}
 
-      .full {
-        @include grid (12);
-      }
+        .full {
+            @include grid (12);
+        }
 
       #main, .main {}
+
+        .home {
+            @include grid(5);
+            @include break(tablet, 12);
+            @include break(mobile, 12);
+        }
 
        .sidebar {}
 
