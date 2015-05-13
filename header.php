@@ -41,33 +41,31 @@
 
 	<body <?php body_class('wrapper'); ?>>
 
-        <div class="container">
+        <header class="header" role="banner">
 
-            <header class="header" role="banner">
+            <div id="inner-header" class="wrapper">
+                <div class="logo-container">
+                    <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
+                    <p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
-                <div id="inner-header" class="wrapper">
-                    <div class="logo-container">
-                        <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-                        <p id="logo"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-                        <?php // if you'd like to use the site description you can un-comment it below ?>
-                        <?php // bloginfo('description'); ?>
-                    </div>
-                    <?php get_sidebar ('header');?>
+                    <?php // if you'd like to use the site description you can un-comment it below ?>
+                    <?php // bloginfo('description'); ?>
                 </div>
+                <?php get_sidebar ('header');?>
+            </div>
 
-                        <?php if ( wp_is_mobile() ) {
+                    <?php if ( wp_is_mobile() ) {
 
-                                get_template_part ('partials/navigation' , 'mobile');
+                            get_template_part ('partials/navigation' , 'mobile');
 
-                            }
+                        }
 
-                            else {
+                        else {
 
-                                get_template_part ('partials/navigation');
+                            get_template_part ('partials/navigation');
 
-                            }
+                        }
 
-                        ?>
+                    ?>
 
-            </header>
+        </header>

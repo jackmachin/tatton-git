@@ -924,6 +924,13 @@ Stylesheet: Layout Stylesheet
       width: 100%;
       margin: 1%; } }
 
+.footer {
+  float: left;
+  width: 100%;
+  margin-right: 2%; }
+  .footer:last-child {
+    margin-right: 0; }
+
 /******************************************************************
 Site Name:
 Author:
