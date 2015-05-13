@@ -1156,7 +1156,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
-  background-color: #eaedf2;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased; }
 
 /********************
@@ -1281,7 +1281,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 nav {
-  background-color: #323944; }
+  background-color: #fff; }
 
 .nav {
   margin: 0;
@@ -1326,7 +1326,7 @@ nav {
   left: 0;
   bottom: 0;
   margin: 0;
-  background-color: #323944;
+  background-color: #fff;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -1844,7 +1844,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
+  background-color: #fff;
   color: #f8f9fa; }
 
 /*
