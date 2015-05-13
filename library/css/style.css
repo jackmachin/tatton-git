@@ -429,12 +429,12 @@ table {
   white-space: nowrap;
   overflow: hidden; }
 
-.clearfix, .cf {
+.clearfix, .cf, .comment-respond {
   zoom: 1; }
-  .clearfix:before, .clearfix:after, .cf:before, .cf:after {
+  .clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
     content: "";
     display: table; }
-  .clearfix:after, .cf:after {
+  .clearfix:after, .cf:after, .comment-respond:after {
     clear: both; }
 
 /*
@@ -792,7 +792,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn {
+.blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -808,10 +808,10 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .blue-btn:focus {
+  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
     color: #fff;
     text-decoration: none; }
-  .blue-btn:active {
+  .blue-btn:active, .comment-reply-link:active, #submit:active {
     top: 1px; }
 
 /*
@@ -819,12 +819,14 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.blue-btn {
+.blue-btn, .comment-reply-link, #submit {
   background-color: #82d2e5; }
   .blue-btn:hover,
-  .blue-btn:focus {
+  .comment-reply-link:hover,
+  #submit:hover,
+  .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
     background-color: #71cce1; }
-  .blue-btn:active {
+  .blue-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #6dcae1; }
 
 /******************************************************************
@@ -1125,6 +1127,727 @@ This are the mobile styles. It's what people see on their phones. If
 you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #5c6b80;
+  background-color: #eaedf2;
+  -webkit-font-smoothing: antialiased; }
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  width: 96%;
+  margin: 0 auto; }
+
+/*********************
+LINK STYLES
+*********************/
+a, a:visited {
+  color: #2980b9;
+  text-decoration: none;
+  /* on hover */
+  /* on click */
+  /* mobile tap color */ }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #216693;
+    text-decoration: underline; }
+  a:link, a:visited:link {
+    /*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  text-rendering: optimizelegibility;
+  font-weight: 500;
+  /*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+  /* removing text decoration from all headline links */ }
+  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+    text-decoration: none; }
+
+h1, .h1 {
+  font-size: 2.5em;
+  line-height: 1.333em; }
+
+h2, .h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em; }
+
+h3, .h3 {
+  font-size: 1.125em; }
+
+h4, .h4 {
+  font-size: 1.1em;
+  font-weight: 700; }
+
+h5, .h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+/*********************
+HEADER STYLES
+*********************/
+.header {
+  background-color: #fff; }
+
+#logo {
+  margin: 0; }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+nav {
+  background-color: #323944; }
+
+.nav {
+  margin: 0;
+  /* end .menu li */
+  /* highlight current page */
+  /* end current highlighters */ }
+  .nav li {
+    /*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/ }
+    .nav li a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75em;
+      text-align: center;
+      /*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/ }
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      display: none;
+      margin: 0 auto; }
+      .nav li ul.sub-menu li,
+      .nav li ul.children li {
+        width: 100%; }
+        .nav li ul.sub-menu li a,
+        .nav li ul.children li a {
+          background-color: #f8f9fa;
+          color: #82d2e5; }
+
+/* end .top-nav */
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #323944;
+  /* end .menu li */
+  /* highlight current page */
+  /* end current highlighters */ }
+  .mobile-nav li {
+    width: 25%;
+    float: left;
+    /*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/ }
+    .mobile-nav li a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75em;
+      text-align: center;
+      /*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/ }
+    .mobile-nav li ul.sub-menu,
+    .mobile-nav li ul.children {
+      display: none;
+      margin: 0 auto; }
+      .mobile-nav li ul.sub-menu li,
+      .mobile-nav li ul.children li {
+        width: 100%; }
+        .mobile-nav li ul.sub-menu li a,
+        .mobile-nav li ul.children li a {
+          background-color: #f8f9fa;
+          color: #82d2e5; }
+  .mobile-nav .menu-item:nth-child(4n-2) ul.sub-menu {
+    margin: 0 -100%; }
+  .mobile-nav .menu-item:nth-child(4n-1) ul.sub-menu {
+    margin: 0 -200%; }
+  .mobile-nav .menu-item:nth-child(4n) ul.sub-menu {
+    margin: 0 -300%; }
+  .mobile-nav .mobile-nav li:nth-child(4n+1) {
+    clear: both; }
+
+/* end .mobile-nav */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+.hentry {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #ccc; }
+  .hentry header {
+    border-bottom: 1px solid #f8f9fa;
+    padding: 1.5em; }
+  .hentry footer {
+    padding: 1.5em;
+    border-top: 1px solid #f8f9fa; }
+    .hentry footer p {
+      margin: 0; }
+
+/* end .hentry */
+.single-title,
+.page-title,
+.entry-title {
+  margin: 0; }
+
+/* want to style individual post classes? Booya! */
+/* post by id (i.e. post-3) */
+/* general post style */
+/* general article on a page style */
+/* general style on an attatchment */
+/* sticky post style */
+/* hentry class */
+/* style by category (i.e. category-videos) */
+/* style by tag (i.e. tag-news) */
+/* post meta */
+.byline {
+  color: #9fa6b4;
+  font-style: italic;
+  margin: 0; }
+
+/* entry content */
+.entry-content {
+  padding: 0 1.5em 0;
+  /*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/ }
+  .entry-content ul, .entry-content ol {
+    margin-left: 2em; }
+  .entry-content ul {
+    list-style-type: disc; }
+  .entry-content ol {
+    list-style-type: decimal; }
+  .entry-content table {
+    width: 100%;
+    border: 1px solid #eaedf2; }
+    .entry-content table caption {
+      margin: 0 0 7px;
+      font-size: 0.75em;
+      color: #9fa6b4;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+  .entry-content tr {
+    border-bottom: 1px solid #eaedf2; }
+    .entry-content tr:nth-child(even) {
+      background-color: #f8f9fa; }
+  .entry-content td {
+    padding: 7px;
+    border-right: 1px solid #eaedf2; }
+    .entry-content td:last-child {
+      border-right: 0; }
+  .entry-content th {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaedf2;
+    border-right: 1px solid #eaedf2; }
+    .entry-content th:last-child {
+      border-right: 0; }
+  .entry-content blockquote {
+    padding: 0 0 0 0.75em;
+    border-left: 3px solid #82d2e5;
+    font-style: italic;
+    color: #9fa6b4; }
+  .entry-content dd {
+    margin-left: 0;
+    font-size: 0.9em;
+    color: #787878; }
+  .entry-content img {
+    max-width: 100%;
+    height: auto; }
+  .entry-content .size-auto,
+  .entry-content .size-full,
+  .entry-content .size-large,
+  .entry-content .size-medium,
+  .entry-content .size-thumbnail {
+    max-width: 100%;
+    height: auto; }
+  .entry-content pre {
+    background: #323944;
+    color: #f8f9fa;
+    font-size: 0.9em;
+    padding: 1.5em;
+    border-radius: 3px; }
+
+/* end .entry-content */
+.wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */ }
+  .wp-caption img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%; }
+  .wp-caption p.wp-caption-text {
+    font-size: 0.85em;
+    margin: 4px 0 7px;
+    text-align: center; }
+
+/* end .wp-caption */
+/* image gallery styles */
+/* end .gallery */
+/* gallery caption styles */
+.tags {
+  margin: 0; }
+
+/******************************************************************
+POST FORMATS
+******************************************************************/
+/* Style the quote post wrapper. */
+/* Style blockquotes within the quote post. */
+.format-quote blockquote {
+  border-left: 2px solid #ccc; }
+
+/* Don't forget cite in case a user makes use of it. */
+/* Gallery */
+.gallery {
+  margin: auto -6px;
+  padding: 6px 0;
+  line-height: 1;
+  overflow-x: hidden; }
+
+.ie7 .gallery,
+.ie8 .gallery {
+  margin: auto; }
+
+.gallery .gallery-item {
+  float: left;
+  margin: 0;
+  text-align: center;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.ie7 .gallery .gallery-item,
+.ie8 .gallery .gallery-item {
+  padding: 6px 0; }
+
+.gallery .gallery-caption,
+.gallery .gallery-icon {
+  margin: 0; }
+
+.gallery .gallery-caption {
+  font-size: 13px;
+  margin: 4px 0; }
+
+.gallery-columns-1 .gallery-item {
+  width: 100%; }
+
+.gallery-columns-2 .gallery-item {
+  width: 50%; }
+
+.gallery-columns-3 .gallery-item {
+  width: 33.333%; }
+
+.ie8 .gallery-columns-3 .gallery-item,
+.ie7 .gallery-columns-3 .gallery-item {
+  width: 33%; }
+
+.gallery-columns-4 .gallery-item {
+  width: 25%; }
+
+.gallery-columns-5 .gallery-item {
+  width: 20%; }
+
+.gallery-columns-6 .gallery-item {
+  width: 16.665%; }
+
+.gallery-columns-7 .gallery-item {
+  width: 14.285%; }
+
+.gallery-columns-8 .gallery-item {
+  width: 12.5%; }
+
+.gallery-columns-9 .gallery-item {
+  width: 11.111%; }
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  padding: 0; }
+
+/* Wrapper for entire chat transcript. */
+/* Individual section of the chat. */
+/* Individual speaker in the chat. */
+/* Chat author. */
+/* Chat text. */
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+.pagination,
+.wp-prev-next {
+  margin: 1.5em 0; }
+
+.pagination {
+  text-align: center; }
+  .pagination ul {
+    display: inline-block;
+    background-color: #fff;
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    border-radius: 3px; }
+  .pagination li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: inline;
+    overflow: hidden;
+    border-right: 1px solid #eaedf2; }
+  .pagination a, .pagination span {
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    line-height: 1em;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0.75em;
+    min-width: 1em;
+    display: block;
+    color: #82d2e5; }
+    .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
+      background-color: #82d2e5;
+      color: #fff; }
+  .pagination .current {
+    cursor: default;
+    color: #5c6b80; }
+    .pagination .current:hover, .pagination .current:focus {
+      background-color: #fff;
+      color: #5c6b80; }
+
+/* end .bones_page_navi */
+/* fallback previous & next links */
+.wp-prev-next .prev-link {
+  float: left; }
+
+.wp-prev-next .next-link {
+  float: right; }
+
+/* end .wp-prev-next */
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+/* h3 comment title */
+#comments-title {
+  padding: 0.75em;
+  margin: 0;
+  border-top: 1px solid #f8f9fa;
+  /* number of comments span */ }
+
+.commentlist {
+  margin: 0;
+  list-style-type: none; }
+
+.comment {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  padding: 1.5em;
+  border-bottom: 1px solid #f8f9fa;
+  /* vcard */
+  /* end .commentlist .vcard */
+  /* end children */
+  /* general comment classes */ }
+  .comment .comment-author {
+    padding: 7px;
+    border: 0; }
+  .comment .vcard {
+    margin-left: 50px; }
+    .comment .vcard cite.fn {
+      font-weight: 700;
+      font-style: normal; }
+    .comment .vcard time {
+      display: block;
+      font-size: 0.9em;
+      font-style: italic; }
+      .comment .vcard time a {
+        color: #9fa6b4;
+        text-decoration: none; }
+        .comment .vcard time a:hover {
+          text-decoration: underline; }
+    .comment .vcard .avatar {
+      position: absolute;
+      left: 16px;
+      border-radius: 50%; }
+  .comment:last-child {
+    margin-bottom: 0; }
+  .comment .children {
+    margin: 0;
+    /* variations */
+    /* change number for different depth */ }
+  .comment[class*=depth-] {
+    margin-top: 1.1em; }
+  .comment.depth-1 {
+    margin-left: 0;
+    margin-top: 0; }
+  .comment:not(.depth-1) {
+    margin-top: 0;
+    margin-left: 7px;
+    padding: 7px; }
+  .comment.odd {
+    background-color: #fff; }
+  .comment.even {
+    background: #f8f9fa; }
+
+/* comment meta */
+/* comment content */
+.comment_content {
+  /*
+        image alignment on a screen this size may be
+        a bit difficult. It's set to start aligning
+        and floating images at the next breakpoint,
+        but it's up to you. Feel free to change it up.
+        */ }
+  .comment_content p {
+    margin: 0.7335em 0 1.5em;
+    font-size: 1em;
+    line-height: 1.5em; }
+  .comment_content ul, .comment_content ol {
+    margin-left: 2em; }
+  .comment_content ul {
+    list-style-type: disc; }
+  .comment_content ol {
+    list-style-type: decimal; }
+  .comment_content table {
+    width: 100%;
+    border: 1px solid #eaedf2; }
+    .comment_content table caption {
+      margin: 0 0 7px;
+      font-size: 0.75em;
+      color: #9fa6b4;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+  .comment_content tr {
+    border-bottom: 1px solid #eaedf2; }
+    .comment_content tr:nth-child(even) {
+      background-color: #f8f9fa; }
+  .comment_content td {
+    padding: 7px;
+    border-right: 1px solid #eaedf2; }
+    .comment_content td:last-child {
+      border-right: 0; }
+  .comment_content th {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eaedf2;
+    border-right: 1px solid #eaedf2; }
+    .comment_content th:last-child {
+      border-right: 0; }
+  .comment_content blockquote {
+    padding: 0 0 0 0.75em;
+    border-left: 3px solid #82d2e5;
+    font-style: italic;
+    color: #9fa6b4; }
+  .comment_content dd {
+    margin-left: 0;
+    font-size: 0.9em;
+    color: #787878; }
+  .comment_content img {
+    max-width: 100%;
+    height: auto; }
+  .comment_content .size-auto,
+  .comment_content .size-full,
+  .comment_content .size-large,
+  .comment_content .size-medium,
+  .comment_content .size-thumbnail {
+    max-width: 100%;
+    height: auto; }
+  .comment_content pre {
+    background: #323944;
+    color: #f8f9fa;
+    font-size: 0.9em;
+    padding: 1.5em;
+    border-radius: 3px; }
+
+/* end .commentlist .comment_content */
+/* comment reply link */
+.comment-reply-link {
+  font-size: 0.9em;
+  float: right; }
+
+/* end .commentlist .comment-reply-link */
+/* edit comment link */
+.comment-edit-link {
+  font-style: italic;
+  margin: 0 7px;
+  text-decoration: none;
+  font-size: 0.9em; }
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+.comment-respond {
+  padding: 1.5em;
+  border-top: 1px solid #f8f9fa; }
+
+#reply-title {
+  margin: 0; }
+
+.logged-in-as {
+  color: #9fa6b4;
+  font-style: italic;
+  margin: 0; }
+  .logged-in-as a {
+    color: #5c6b80; }
+
+.comment-form-comment {
+  margin: 1.5em 0 0.75em; }
+
+.form-allowed-tags {
+  padding: 1.5em;
+  background-color: #f8f9fa;
+  font-size: 0.9em; }
+
+/* comment submit button */
+#submit {
+  float: right;
+  font-size: 1em; }
+
+/* comment form title */
+#comment-form-title {
+  margin: 0 0 1.1em; }
+
+/* cancel comment reply link */
+/* logged in comments */
+/* allowed tags */
+#allowed_tags {
+  margin: 1.5em 10px 0.7335em 0; }
+
+/* no comments */
+.nocomments {
+  margin: 0 20px 1.1em; }
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.widget ul li {
+  /* deep nesting */ }
+
+.no-widgets {
+  background-color: #fff;
+  padding: 1.5em;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 1.5em; }
+
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+  clear: both;
+  background-color: #323944;
+  color: #f8f9fa; }
+
+/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+/* end .footer-links */
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
