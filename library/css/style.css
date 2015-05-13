@@ -869,39 +869,6 @@ Stylesheet: Layout Stylesheet
       width: 100%;
       margin: 1%; } }
 
-.logo-container {
-  float: left;
-  width: 32%;
-  margin-right: 2%; }
-  .logo-container:last-child {
-    margin-right: 0; }
-  @media only screen and (max-width: 767px) {
-    .logo-container {
-      width: 100%;
-      margin: 1%;
-      margin-left: 0; } }
-  @media only screen and (max-width: 480px) {
-    .logo-container {
-      width: 100%;
-      margin: 1%; } }
-
-#sidebar-header {
-  float: left;
-  width: 32%;
-  margin-left: 34%;
-  margin-right: 2%; }
-  #sidebar-header:last-child {
-    margin-right: 0; }
-  @media only screen and (max-width: 767px) {
-    #sidebar-header {
-      width: 100%;
-      margin: 1%;
-      margin-left: 0; } }
-  @media only screen and (max-width: 480px) {
-    #sidebar-header {
-      width: 100%;
-      margin: 1%; } }
-
 #content {
   float: left;
   width: 74.5%;
