@@ -4,17 +4,29 @@ Author:
 
 Stylesheet: Layout Stylesheet
 ******************************************************************/
+
+*,
+*:after,
+*:before {
+  @include box-size;
+
+}
+
+body{
+	overflow-y: scroll;
+}
+
 .wrapper {
 	@include clearfix;
-	max-width: $break-wide;
-	//min-width: ($break-mobile - 20px);
-	margin-left: auto;
-    margin-right: auto;
+	max-width: $max-width;
+	min-width: $min-width;
+	margin: 30px auto;
 }
 
 .container {
 	@include clearfix;
 	width: 100%;
+	margin: 10px 0;
 }
 
 #container {}

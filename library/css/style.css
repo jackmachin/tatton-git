@@ -606,6 +606,10 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 /*********************
 CLEARFIX
 *********************/
+/* BOX SIZEING -
+========================================================================== */
+/* CSS3 PROPERTIES -
+========================================================================== */
 /*********************
 TRANSITION
 *********************/
@@ -844,17 +848,28 @@ Author:
 
 Stylesheet: Layout Stylesheet
 ******************************************************************/
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  overflow-y: scroll; }
+
 .wrapper {
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto; }
+  max-width: 1162.8px;
+  min-width: 460px;
+  margin: 30px auto; }
   .wrapper:after {
     content: "";
     display: table;
     clear: both; }
 
 .container {
-  width: 100%; }
+  width: 100%;
+  margin: 10px 0; }
   .container:after {
     content: "";
     display: table;
