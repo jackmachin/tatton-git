@@ -853,6 +853,22 @@ Stylesheet: Layout Stylesheet
     display: table;
     clear: both; }
 
+.header {
+  float: left;
+  width: 23.5%;
+  margin-right: 2%; }
+  .header:last-child {
+    margin-right: 0; }
+  @media only screen and (max-width: 767px) {
+    .header {
+      width: 100%;
+      margin: 1%;
+      margin-left: 0; } }
+  @media only screen and (max-width: 480px) {
+    .header {
+      width: 100%;
+      margin: 1%; } }
+
 .logo-container {
   float: left;
   width: 32%;
@@ -883,6 +899,22 @@ Stylesheet: Layout Stylesheet
       margin-left: 0; } }
   @media only screen and (max-width: 480px) {
     #sidebar-header {
+      width: 100%;
+      margin: 1%; } }
+
+#content {
+  float: left;
+  width: 74.5%;
+  margin-right: 2%; }
+  #content:last-child {
+    margin-right: 0; }
+  @media only screen and (max-width: 767px) {
+    #content {
+      width: 100%;
+      margin: 1%;
+      margin-left: 0; } }
+  @media only screen and (max-width: 480px) {
+    #content {
       width: 100%;
       margin: 1%; } }
 

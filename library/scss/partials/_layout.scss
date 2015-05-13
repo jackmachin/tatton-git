@@ -19,7 +19,11 @@ Stylesheet: Layout Stylesheet
 
 #container {}
 
-  .header {}
+  .header {
+    @include grid(3);
+    @include break(tablet, 12);
+    @include break(mobile, 12);
+  }
 
     #inner-header {}
 
@@ -36,7 +40,11 @@ Stylesheet: Layout Stylesheet
       }
   .nav {}
 
-  #content {}
+  #content {
+    @include grid(9);
+    @include break(tablet, 12);
+    @include break(mobile, 12);
+  }
 
     #inner-content {}
 
