@@ -862,7 +862,6 @@ Stylesheet: Layout Stylesheet
 
 .header {
   float: left;
-  cursor: pointer;
   width: 23%;
   margin-left: 1%;
   margin-right: 1%; }
@@ -879,7 +878,6 @@ Stylesheet: Layout Stylesheet
 
 #content {
   float: left;
-  cursor: pointer;
   width: 75%;
   margin-left: 0;
   margin-right: 0; }
@@ -896,7 +894,6 @@ Stylesheet: Layout Stylesheet
 
 .full {
   float: left;
-  cursor: pointer;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
@@ -905,7 +902,6 @@ Stylesheet: Layout Stylesheet
 
 .footer {
   float: left;
-  cursor: pointer;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
