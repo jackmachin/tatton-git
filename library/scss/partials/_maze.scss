@@ -69,7 +69,6 @@ $min-width: $break-mobile - 20px; /* Set min width with scroll bar */
 @mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
 
         float:#{$fold};
-        padding: 20px;
         width: (100% / ($grid-size / $col-span)) - $margin ;
 
         @if $push <= 0 {

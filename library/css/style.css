@@ -664,7 +664,6 @@ body {
 
 .header {
   float: left;
-  padding: 20px;
   width: 23%;
   margin-left: 1%;
   margin-right: 1%; }
@@ -679,7 +678,6 @@ body {
 
 #content {
   float: left;
-  padding: 20px;
   width: 73%;
   margin-left: 1%;
   margin-right: 1%; }
@@ -694,14 +692,12 @@ body {
 
 .full {
   float: left;
-  padding: 20px;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
 
 .home-content {
   float: left;
-  padding: 20px;
   width: 39.66667%;
   margin-left: 1%;
   margin-right: 1%; }
@@ -716,7 +712,6 @@ body {
 
 .footer {
   float: left;
-  padding: 20px;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
