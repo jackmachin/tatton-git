@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Home page
+ Template Name: Homepage
  *
  * This is the home page template.
 */
