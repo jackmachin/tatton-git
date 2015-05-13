@@ -41,6 +41,8 @@
 
 	<body <?php body_class('wrapper'); ?>>
 
+        <div class="container">
+
         <header class="header" role="banner">
 
             <div id="inner-header" class="wrapper">
