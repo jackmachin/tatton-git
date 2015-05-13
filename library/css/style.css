@@ -581,27 +581,6 @@ width: calc-percent(650px, 1000px);
 both compile to:
 width: 65%;
 *********************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Mixins Stylesheet
-
-This is where you can take advantage of Sass' great features: Mixins.
-I won't go in-depth on how they work exactly,
-there are a few articles below that will help do that. What I will
-tell you is that this will help speed up simple changes like
-changing a color or adding CSS3 techniques gradients.
-
-A WORD OF WARNING: It's very easy to overdo it here. Be careful and
-remember less is more.
-
-Helpful:
-http://sachagreif.com/useful-sass-mixins/
-http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
-http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
-
-******************************************************************/
 /*********************
 TRANSITION
 *********************/
@@ -623,12 +602,28 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
-/*********************
-CLEARFIX
-*********************/
-/*********************
-MAZE
-*********************/
+/* ==========================================================================
+// Base File
+// Set up all global variables and naming conventions.
+
+/* col-spanOR DEFAULTS
+========================================================================== */
+/* col-spanours -  Defined only once */
+/* Mark-up - selectors used throughout site. */
+/* ==========================================================================
+// Mixin File
+// Usefull mixins & re-usable code.
+/* BOX SIZEING -
+========================================================================== */
+/* CSS3 PROPERTIES -
+========================================================================== */
+/* ==========================================================================
+// Grid File
+// Grid set up using the Maze Framework www.get-maze.co.uk.
+/* VARIABLES
+========================================================================== */
+/* Grid Defaults */
+/* Breakpoints */
 /* Calculate Min & Max Widths */
 /* Strip percentage from gutter */
 /* Work out 1% of $break-wide */
@@ -636,204 +631,13 @@ MAZE
 /* Set min width with scroll bar */
 /* MIXIN
 ========================================================================== */
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Grid Stylesheet
-
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
-
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-https://github.com/dope/lemonade - Neat lightweight grid.
-
-
-The grid below is a custom built thingy I modeled a bit after
-Gridset. It's VERY basic and probably shouldn't be used on
-your client projects. The idea is you learn how to roll your
-own grids. It's better in the long run and allows you full control
-over your project's layout.
-
-******************************************************************/
-.last-col {
-  float: right;
-  padding-right: 0 !important; }
-
-/*
-Mobile Grid Styles
-These are the widths for the mobile grid.
-There are four types, but you can add or customize
-them however you see fit.
-*/
-@media (max-width: 767px) {
-  .m-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-  .m-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-  .m-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-  .m-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-  .m-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-  .m-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; } }
-
-/* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 1029px) {
-  .t-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-  .t-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-  .t-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-  .t-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-  .t-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-  .t-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; }
-  .t-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%; }
-  .t-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%; }
-  .t-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%; }
-  .t-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%; } }
-
-/* Landscape to small desktop */
-@media (min-width: 1030px) {
-  .d-all {
-    float: left;
-    padding-right: 0.75em;
-    width: 100%;
-    padding-right: 0; }
-  .d-1of2 {
-    float: left;
-    padding-right: 0.75em;
-    width: 50%; }
-  .d-1of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 33.33%; }
-  .d-2of3 {
-    float: left;
-    padding-right: 0.75em;
-    width: 66.66%; }
-  .d-1of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 25%; }
-  .d-3of4 {
-    float: left;
-    padding-right: 0.75em;
-    width: 75%; }
-  .d-1of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 20%; }
-  .d-2of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 40%; }
-  .d-3of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 60%; }
-  .d-4of5 {
-    float: left;
-    padding-right: 0.75em;
-    width: 80%; }
-  .d-1of6 {
-    float: left;
-    padding-right: 0.75em;
-    width: 16.6666666667%; }
-  .d-1of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 14.2857142857%; }
-  .d-2of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 28.5714286%; }
-  .d-3of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 42.8571429%; }
-  .d-4of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 57.1428572%; }
-  .d-5of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 71.4285715%; }
-  .d-6of7 {
-    float: left;
-    padding-right: 0.75em;
-    width: 85.7142857%; }
-  .d-1of8 {
-    float: left;
-    padding-right: 0.75em;
-    width: 12.5%; }
-  .d-1of9 {
-    float: left;
-    padding-right: 0.75em;
-    width: 11.1111111111%; }
-  .d-1of10 {
-    float: left;
-    padding-right: 0.75em;
-    width: 10%; }
-  .d-1of11 {
-    float: left;
-    padding-right: 0.75em;
-    width: 9.09090909091%; }
-  .d-1of12 {
-    float: left;
-    padding-right: 0.75em;
-    width: 8.33%; } }
-
+/* ==========================================================================
+// Breakpoint File
+// Add new or make changes to existing breakpoints.
+/* VARIABLES -
+========================================================================== */
+/* MIXIN -
+========================================================================== */
 /******************************************************************
 Site Name:
 Author:
@@ -861,11 +665,18 @@ body {
     clear: both; }
 
 .header {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
   width: 23%;
   margin-left: 1%;
   margin-right: 1%; }
   .header:hover {
+    background: #312a1e;
     color: #fff; }
   @media only screen and (max-width: 767px) {
     .header {
@@ -877,11 +688,18 @@ body {
       margin: 1%; } }
 
 #content {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
   width: 75%;
   margin-left: 0;
   margin-right: 0; }
   #content:hover {
+    background: #312a1e;
     color: #fff; }
   @media only screen and (max-width: 767px) {
     #content {
@@ -893,20 +711,58 @@ body {
       margin: 1%; } }
 
 .full {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
   .full:hover {
+    background: #312a1e;
     color: #fff; }
 
 .footer {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
   .footer:hover {
+    background: #312a1e;
     color: #fff; }
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Embed Stylesheet
+
+******************************************************************/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto; }
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /*********************
 IMPORTING MODULES

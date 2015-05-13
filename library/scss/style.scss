@@ -36,14 +36,14 @@ the whole project.
 // import mixins
 @import "partials/mixins";
 
-// the grid
-@import "partials/grid";
+// MAZE
+@import "partials/maze";
 
 // layout
 @import "partials/layout";
 
 // responsive embeds
-//@import "partials/embeds";
+@import "partials/embeds";
 
 /*********************
 IMPORTING MODULES
