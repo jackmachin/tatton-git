@@ -153,7 +153,6 @@ $min-width: $break-mobile - 20px; /* Set min width with scroll bar */
 
 @mixin grid($col-span, $fold:$fold, $push:$push, $grid-size:$total-grid-columns, $margin:$gutter) {
 
-    @include transition;
         float:#{$fold};
         width: (100% / ($grid-size / $col-span)) - $margin ;
 
