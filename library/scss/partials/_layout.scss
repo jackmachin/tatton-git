@@ -45,17 +45,9 @@ Stylesheet: Layout Stylesheet
         @include grid (12);
       }
 
-      #main, .main {
-        @include grid(8);
-        @include break(tablet, 12);
-        @include break(mobile, 12);
-      }
+      #main, .main {}
 
-       .sidebar {
-        @include grid(4);
-        @include break(tablet, 12);
-        @include break(mobile, 12);
-       }
+       .sidebar {}
 
   .footer {
     @include grid (12);
