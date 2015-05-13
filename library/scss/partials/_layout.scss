@@ -52,7 +52,7 @@ body{
 
       #main, .main {}
 
-        .home {
+        .home-content {
             @include grid(5);
             @include break(tablet, 12);
             @include break(mobile, 12);
