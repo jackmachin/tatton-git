@@ -665,9 +665,6 @@ body {
     clear: both; }
 
 .header {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   float: left;
   background: #ffa600;
   cursor: pointer;
@@ -688,9 +685,6 @@ body {
       margin: 1%; } }
 
 #content {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   float: left;
   background: #ffa600;
   cursor: pointer;
@@ -711,9 +705,6 @@ body {
       margin: 1%; } }
 
 .full {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   float: left;
   background: #ffa600;
   cursor: pointer;
@@ -726,9 +717,6 @@ body {
     color: #fff; }
 
 .footer {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   float: left;
   background: #ffa600;
   cursor: pointer;
