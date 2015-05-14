@@ -1486,6 +1486,9 @@ POSTS & CONTENT STYLES
 .tags {
   margin: 0; }
 
+.page-template-about-page p:first-of-type {
+  font-size: 1.6666666667em; }
+
 /******************************************************************
 POST FORMATS
 ******************************************************************/

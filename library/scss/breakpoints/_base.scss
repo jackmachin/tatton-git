@@ -504,6 +504,12 @@ POSTS & CONTENT STYLES
 		margin: 0;
 	}
 
+.page-template-about-page {
+    p:first-of-type {
+        font-size:1.6666666667em;
+    }
+}
+
 /******************************************************************
 POST FORMATS
 ******************************************************************/
@@ -847,9 +853,6 @@ COMMENT STYLES
 	&.thread-odd {}
 	&.thread-even {}
 }
-
-
-
 
 	/* comment meta */
 	.comment-meta {
