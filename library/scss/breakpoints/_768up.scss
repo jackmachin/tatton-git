@@ -179,10 +179,18 @@ SIDEBARS & ASIDES
     border-radius: 1em;
     -webkit-box-shadow: 0px 0px 9px 1px rgba(126, 160, 136, 0.9);
     box-shadow: 0px 0px 9px 1px rgba(126, 160, 136, 0.9);
+
+    .widgettitle {
+        font-weight: 700;
+        color: #666;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
 }
 
 	.widgettitle {
 		border-bottom: 2px solid #444;
+
 	}
 
 	.widget {
