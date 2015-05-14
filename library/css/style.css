@@ -1829,8 +1829,9 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
-  clear: both;
-  background-color: #fff; }
+  padding: 1em;
+  border: 1px solid #B2C6B8;
+  border-radius: .5em; }
 
 .copyright {
   color: #7ea088; }
@@ -2023,6 +2024,7 @@ MAIN CONTENT
   .home-container {
     background: url("/wp-content/themes/tatton/library/images/big_tree.jpg") no-repeat top; }
   .home-content {
+    margin-top: 10em;
     padding: 1em;
     border-radius: .5em;
     background-color: rgba(255, 255, 255, 0.9);
@@ -2060,10 +2062,6 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-  .footer {
-    padding: 1em;
-    border: 1px solid #B2C6B8;
-    border-radius: .5em; }
   .footer-links ul li {
     /*
 			be careful with the depth of your menus.

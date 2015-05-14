@@ -1117,8 +1117,9 @@ FOOTER STYLES
 *********************/
 
 .footer {
-	clear: both;
-	background-color: $footer-bg;
+    padding: 1em;
+    border: 1px solid #B2C6B8;
+    border-radius: .5em;
 }
 
 .copyright {
