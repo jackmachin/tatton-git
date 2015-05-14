@@ -74,6 +74,27 @@ body{
             @include break(mobile, 12);
         }
 
+.profile {
+    @include grid(12);
+}
+
+.profile-image {
+            @include grid(4);
+            @include break(tablet, 12);
+            @include break(mobile, 12);
+}
+
+.profile-bio {
+    @include grid(8);
+    @include break(tablet, 12);
+    @include break(mobile, 12);
+}
+
+.profile-bio-no-image  {
+    @include grid(12);
+}
+
+
        .sidebar {
             @include grid(4);
             @include break(tablet, 12);
