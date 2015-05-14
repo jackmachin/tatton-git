@@ -1169,7 +1169,7 @@ GENERAL STYLES
 *********************/
 body {
   font-family: Trebuchet MS, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%;
+  font-size: .75em;
   line-height: 1.5;
   color: #323944;
   background-color: #fff;
