@@ -31,20 +31,22 @@ body{
 
     #inner-header {}
 
-      .logo-container {
-        @include grid (12);
-        @include break(mobile, 3);
-      }
+        .logo-container {
+            @include grid (12);
+            @include break(tablet, 3);
+            @include break(mobile, 3);
+        }
 
-      #sidebar-header {
-          @include grid(12);
-      }
 
-    .top-nav {
-        @include grid(8);
-        @include break(tablet, 12);
-        @include break(mobile, 9);
-    }
+        .top-nav {
+            @include grid(8);
+            @include break(tablet, 9);
+            @include break(mobile, 9);
+        }
+
+        #sidebar-header {
+            @include grid(12);
+        }
 
   #content {
     @include grid(9);
