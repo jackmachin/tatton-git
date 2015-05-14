@@ -1460,6 +1460,9 @@ POSTS & CONTENT STYLES
   padding-bottom: 10px;
   border-bottom: 1px solid #7EA088; }
 
+.entry-title {
+  font-size: 1.75em; }
+
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
 /* general post style */
