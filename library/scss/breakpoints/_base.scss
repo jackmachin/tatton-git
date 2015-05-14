@@ -180,6 +180,24 @@ nav {
   background-color: $nav-bg;
 }
 
+.top-nav {
+  background-color: rgba(242, 246, 243, 0.9);
+  margin-left: 0 !important;
+  border: 1px solid rgba(126, 160, 136, 0.7);
+  border-radius: 3px;
+  margin-bottom: 0;
+  padding: 10px;
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 33%;
+  -webkit-column-gap: 33%;
+  column-gap: 33%;
+  -moz-column-rule: 1px outset rgba(126, 160, 136, 0.5);
+  -webkit-column-rule: 1px outset rgba(126, 160, 136, 0.5);
+  column-rule: 1px outset rgba(126, 160, 136, 0.5);
+}
+
 .nav {
     margin:0;
 
