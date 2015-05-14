@@ -1931,7 +1931,7 @@ NAVIGATION STYLES
       .nav li a {
         border-bottom: 0;
         text-transform: uppercase;
-        font-size: .625em;
+        font-size: .8333333333333em;
         font-weight: 500;
         /*
 			you can use hover styles here even though this size
