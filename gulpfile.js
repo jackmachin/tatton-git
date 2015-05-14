@@ -24,7 +24,12 @@ gulp.task('sass', function () {
     "use strict";
     return gulp.src('library/scss/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('library/css'))
+        .pipe(gulp.dest('library/css'));
+});
+
+gulp.task('css', function () {
+    "use strict";
+    return gulp.src('library/css/style.css')
         .pipe(minifyCSS())
         .pipe(rename('style.min.css'))
         .pipe(gulp.dest('library/css'));
@@ -53,7 +58,8 @@ gulp.task('watch', function () {
     gulp.watch('./library/js/**/*.js', ['lint', 'scripts']);
     gulp.watch('./library/scss/*.scss', ['sass']);
     gulp.watch('./library/scss/**/*.scss', ['sass']);
+    gulp.watch('./library/css/style.css', ['css']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['lint', 'sass', 'scripts', 'css', 'watch']);
