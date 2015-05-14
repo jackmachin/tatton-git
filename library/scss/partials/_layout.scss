@@ -38,13 +38,12 @@ body{
 
       #sidebar-header {
           @include grid(12);
-          @include break(mobile, 9);
       }
 
     .top-nav {
         @include grid(8);
         @include break(tablet, 12);
-        @include break(mobile, 12);
+        @include break(mobile, 9);
     }
 
   #content {
