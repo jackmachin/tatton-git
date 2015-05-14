@@ -1901,8 +1901,6 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
-  body {
-    background-color: yellow; }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -1974,6 +1972,8 @@ come into play. Have fun!
   /*********************
 GENERAL STYLES
 *********************/
+  body {
+    background-color: firebrick; }
   /*********************
 LAYOUT & GRID STYLES
 *********************/
