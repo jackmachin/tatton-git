@@ -8,7 +8,23 @@
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                    <?php get_template_part ('post-formats/format', get_post_format() );?>
+     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+                <?php get_template_part ('partials/article-header');?>
+
+                <div class="entry-content" itemprop="articleBody">
+                  <?php
+                    // the content (pretty self explanatory huh)
+                    the_excerpt();
+                  ?>
+                </div> <?php // end article section ?>
+
+                <footer class="article-footer">
+
+                </footer> <?php // end article footer ?>
+
+              </article> <?php // end article ?>
+
 
                 <?php endwhile; ?>
 
