@@ -2020,7 +2020,7 @@ NAVIGATION STYLES
   /*********************
 MAIN CONTENT
 *********************/
-  .home-page #inner-content {
+  .page-template-home-page #inner-content {
     background: url("/wp-content/themes/tatton/library/images/big_tree.jpg"); }
   .home-content {
     padding: 1em;
