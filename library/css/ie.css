@@ -181,9 +181,6 @@ NAVIGATION STYLES
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav ul {
-    background: #323944;
-    margin-top: 0; }
   .nav li {
     float: left;
     position: relative;

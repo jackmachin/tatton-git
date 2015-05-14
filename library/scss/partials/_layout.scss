@@ -35,7 +35,11 @@ body{
 
       #sidebar-header {}
 
-    .nav {}
+    .top-nav {
+        @include grid(6);
+        @include break(tablet, 12);
+        @include break(mobile, 12);
+    }
 
   #content {
     @include grid(9);
