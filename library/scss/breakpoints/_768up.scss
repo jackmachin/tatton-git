@@ -31,7 +31,8 @@ HEADER STYLES
 *********************/
 
 .header {
-    background: #000 url("/wp-content/themes/tatton/library/images/left_fold.png") no-repeat right top;
+    background-image: url("wp-content/themes/tatton/library/images/left_fold.png");
+    background-color: #cccccc;
 }
 
 	#logo {}
