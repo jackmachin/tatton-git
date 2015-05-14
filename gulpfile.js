@@ -24,7 +24,6 @@ gulp.task('sass', function () {
     "use strict";
     return gulp.src('library/scss/*.scss')
         .pipe(sass())
-        .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('library/css'))
         .pipe(minifyCSS())
         .pipe(rename('style.min.css'))

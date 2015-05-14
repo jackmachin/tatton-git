@@ -71,6 +71,7 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 
 // styles in base.scss
 @import "breakpoints/base";
+@import "breakpoints/768up";
 
 /*********************
 LARGER MOBILE DEVICES
