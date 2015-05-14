@@ -1972,6 +1972,8 @@ come into play. Have fun!
   /*********************
 GENERAL STYLES
 *********************/
+  body {
+    background-color: #82d2e5; }
   /*********************
 LAYOUT & GRID STYLES
 *********************/

@@ -164,6 +164,9 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+body {
+  background-color: #2980b9; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
