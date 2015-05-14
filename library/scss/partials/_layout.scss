@@ -62,7 +62,8 @@ body{
 
       #main, .main {}
 
-    .main-content {
+    .main-content,
+    .news {
         @include grid(8);
         @include break(tablet, 12);
         @include break(mobile, 12);
