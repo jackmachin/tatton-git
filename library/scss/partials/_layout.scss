@@ -63,7 +63,7 @@ body{
       #main, .main {}
 
     .main-content {
-        @include grid(9);
+        @include grid(8);
         @include break(tablet, 12);
         @include break(mobile, 12);
     }
@@ -75,7 +75,7 @@ body{
         }
 
        .sidebar {
-            @include grid(3);
+            @include grid(4);
             @include break(tablet, 12);
             @include break(mobile, 12);
        }
