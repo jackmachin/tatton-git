@@ -78,6 +78,14 @@ body {
     margin: 0;
 }
 
+
+/** HACKY RESPONSIVE IMAGES **/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /** LOBOTOMISED OWL **/
 
 * + * {
