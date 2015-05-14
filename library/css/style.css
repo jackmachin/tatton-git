@@ -1367,6 +1367,8 @@ POSTS & CONTENT STYLES
 			and floating images at the next breakpoint,
 			but it's up to you. Feel free to change it up.
 			*/ }
+  .entry-content p {
+    margin-bottom: 0; }
   .entry-content ul, .entry-content ol {
     margin-left: 2em; }
   .entry-content ul {
