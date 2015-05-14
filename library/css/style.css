@@ -1995,7 +1995,7 @@ HEADER STYLES
   .header {
     background: url("/wp-content/themes/tatton/library/images/left_fold.png") no-repeat right top; }
   #sidebar-header {
-    display: none; }
+    display: block; }
   /*********************
 NAVIGATION STYLES
 *********************/
@@ -2064,10 +2064,11 @@ NAVIGATION STYLES
   /*********************
 MAIN CONTENT
 *********************/
+  #inner-content {
+    margin-top: 10em; }
   .home-container {
     background: url("/wp-content/themes/tatton/library/images/big_tree.jpg") no-repeat top; }
   .home-content {
-    margin-top: 10em;
     padding: 1em;
     border-radius: .5em;
     background-color: rgba(255, 255, 255, 0.9);
