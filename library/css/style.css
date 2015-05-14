@@ -758,6 +758,20 @@ body {
       width: 98%;
       margin: 1%; } }
 
+.sidebar {
+  float: left;
+  width: 23%;
+  margin-left: 1%;
+  margin-right: 1%; }
+  @media only screen and (max-width: 767px) {
+    .sidebar {
+      width: 98%;
+      margin: 1%; } }
+  @media only screen and (max-width: 480px) {
+    .sidebar {
+      width: 98%;
+      margin: 1%; } }
+
 .footer {
   float: left;
   width: 98%;
