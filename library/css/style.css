@@ -675,6 +675,12 @@ body {
       width: 98%;
       margin: 1%; } }
 
+#sidebar-header {
+  float: left;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%; }
+
 .top-nav {
   float: left;
   width: 48%;

@@ -33,7 +33,9 @@ body{
 
       .logo-container {}
 
-      #sidebar-header {}
+      #sidebar-header {
+          @include grid(12);
+      }
 
     .top-nav {
         @include grid(6);
