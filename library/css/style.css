@@ -1955,7 +1955,8 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
-/******************************************************************
+@media only screen and (min-width: 768px) {
+  /******************************************************************
 Site Name:
 Author:
 
@@ -1968,120 +1969,116 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
-/*********************
+  /*********************
 GENERAL STYLES
 *********************/
-/*********************
+  /*********************
 LAYOUT & GRID STYLES
 *********************/
-/*********************
+  /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-image: url("wp-content/themes/tatton/library/images/left_fold.png");
-  background-color: #cccccc; }
-
-/*********************
+  .header {
+    background-image: url("wp-content/themes/tatton/library/images/left_fold.png");
+    background-color: #cccccc; }
+  /*********************
 NAVIGATION STYLES
 *********************/
-.nav {
-  border: 0;
-  /* end .menu ul li */
-  /* highlight current page */
-  /* end current highlighters */ }
-  .nav li {
-    float: left;
-    position: relative;
-    /*
+  .nav {
+    border: 0;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+    .nav li {
+      float: left;
+      position: relative;
+      /*
 		plan your menus and drop-downs wisely.
 		*/
-    /* showing sub-menus */ }
-    .nav li a {
-      border-bottom: 0;
-      text-transform: uppercase;
-      /*
+      /* showing sub-menus */ }
+      .nav li a {
+        border-bottom: 0;
+        text-transform: uppercase;
+        /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/ }
-      .nav li a:hover, .nav li a:focus {
-        color: #fff;
-        text-decoration: underline; }
-    .nav li ul.sub-menu,
-    .nav li ul.children {
-      margin-top: 0;
-      border: 1px solid #ccc;
-      border-top: 0;
-      position: absolute;
-      display: none;
-      z-index: 8999;
-      /* highlight sub-menu current page */ }
-      .nav li ul.sub-menu li,
-      .nav li ul.children li {
-        /*
+        .nav li a:hover, .nav li a:focus {
+          color: #fff;
+          text-decoration: underline; }
+      .nav li ul.sub-menu,
+      .nav li ul.children {
+        margin-top: 0;
+        border: 1px solid #ccc;
+        border-top: 0;
+        position: absolute;
+        display: none;
+        z-index: 8999;
+        /* highlight sub-menu current page */ }
+        .nav li ul.sub-menu li,
+        .nav li ul.children li {
+          /*
 				if you need to go deeper, go nuts
 				just remember deeper menus suck
 				for usability. k, bai.
 				*/ }
-        .nav li ul.sub-menu li a,
-        .nav li ul.children li a {
-          padding-left: 10px;
-          border-right: 0;
-          display: block;
-          width: 180px;
-          border-bottom: 1px solid #ccc; }
-        .nav li ul.sub-menu li:last-child a,
-        .nav li ul.children li:last-child a {
-          border-bottom: 0; }
-        .nav li ul.sub-menu li ul,
-        .nav li ul.children li ul {
-          top: 0;
-          left: 100%; }
-    .nav li:hover > ul {
-      top: auto; }
-
-/* end .nav */
-/*********************
+          .nav li ul.sub-menu li a,
+          .nav li ul.children li a {
+            padding-left: 10px;
+            border-right: 0;
+            display: block;
+            width: 180px;
+            border-bottom: 1px solid #ccc; }
+          .nav li ul.sub-menu li:last-child a,
+          .nav li ul.children li:last-child a {
+            border-bottom: 0; }
+          .nav li ul.sub-menu li ul,
+          .nav li ul.children li ul {
+            top: 0;
+            left: 100%; }
+      .nav li:hover > ul {
+        top: auto; }
+  /* end .nav */
+  /*********************
 SIDEBARS & ASIDES
 *********************/
-.widgettitle {
-  border-bottom: 2px solid #444; }
-
-.widget {
-  padding: 0 10px; }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */ }
-    .widget ul li ul {
-      margin-top: 0.75em;
-      padding-left: 1em; }
-
-/* links widget */
-/* meta widget */
-/* pages widget */
-/* recent-posts widget */
-/* archives widget */
-/* tag-cloud widget */
-/* calendar widget */
-/* category widget */
-/* recent-comments widget */
-/* search widget */
-/* text widget */
-/*********************
+  .widgettitle {
+    border-bottom: 2px solid #444; }
+  .widget {
+    padding: 0 10px; }
+    .widget ul li {
+      margin-bottom: 0.75em;
+      /* deep nesting */ }
+      .widget ul li ul {
+        margin-top: 0.75em;
+        padding-left: 1em; }
+  /* links widget */
+  /* meta widget */
+  /* pages widget */
+  /* recent-posts widget */
+  /* archives widget */
+  /* tag-cloud widget */
+  /* calendar widget */
+  /* category widget */
+  /* recent-comments widget */
+  /* search widget */
+  /* text widget */
+  /*********************
 FOOTER STYLES
 *********************/
-/*
+  /*
 you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-.footer-links ul li {
-  /*
+  .footer-links ul li {
+    /*
 			be careful with the depth of your menus.
 			it's very rare to have multi-depth menus in
 			the footer.
 			*/ }
+  /* end .footer-links */ }
 
-/* end .footer-links */
 /*********************
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
