@@ -183,8 +183,6 @@ NAVIGATION STYLES
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
-    float: left;
-    position: relative;
     /*
 		plan your menus and drop-downs wisely.
 		*/
