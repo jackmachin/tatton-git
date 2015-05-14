@@ -1264,9 +1264,6 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background-color: #fff; }
-
 #logo {
   margin: 0; }
 
@@ -1298,7 +1295,7 @@ nav {
 		*/ }
     .nav li a {
       display: block;
-      color: #fff;
+      color: #323944;
       text-decoration: none;
       padding: 0.75em;
       text-align: center;
