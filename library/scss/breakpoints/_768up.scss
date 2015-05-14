@@ -40,17 +40,18 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
 
-.nav {
-	border: 0;
-
-    .top-nav {
+.top-nav {
         background-color: $white;
         border-radius:0;
         padding:0;
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
-    }
+}
+}
+
+.nav {
+	border: 0;
 
 	ul {}
 
