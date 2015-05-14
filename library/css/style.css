@@ -1383,6 +1383,12 @@ POSTS & CONTENT STYLES
 .entry-title {
   margin: 0; }
 
+.page-title {
+  font-weight: 500;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #7EA088; }
+
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
 /* general post style */

@@ -302,7 +302,12 @@ POSTS & CONTENT STYLES
 
 		.single-title {}
 
-		.page-title {}
+		.page-title {
+            font-weight: 500;
+            font-size: 2.5em;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #7EA088;
+        }
 
 		.entry-title {}
 
