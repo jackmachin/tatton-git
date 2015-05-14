@@ -1443,7 +1443,7 @@ POSTS & CONTENT STYLES
   .entry-content p {
     margin-bottom: 0; }
   .entry-content p:first-of-type {
-    font-size: 1.6666666667em; }
+    font-size: .875em; }
   .entry-content ul, .entry-content ol {
     margin-left: 2em; }
   .entry-content ul {
