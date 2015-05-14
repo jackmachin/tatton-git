@@ -13,13 +13,12 @@ body{
 	@include clearfix;
 	max-width: $max-width;
 	min-width: $min-width;
-	margin: 30px auto;
+	margin: 0 auto;
 }
 
 .container {
 	@include clearfix;
 	width: 100%;
-	margin: 10px 0;
 }
 
 #container {}

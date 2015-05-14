@@ -648,15 +648,14 @@ body {
 .wrapper {
   max-width: 1162.8px;
   min-width: 460px;
-  margin: 30px auto; }
+  margin: 0 auto; }
   .wrapper:after {
     content: "";
     display: table;
     clear: both; }
 
 .container {
-  width: 100%;
-  margin: 10px 0; }
+  width: 100%; }
   .container:after {
     content: "";
     display: table;
