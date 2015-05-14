@@ -171,7 +171,7 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 .header {
-  background-image: url("wp-content/themes/tatton/library/images/left_fold.png");
+  background-image: url("/wp-content/themes/tatton/library/images/left_fold.png");
   background-color: #cccccc; }
 
 /*********************
