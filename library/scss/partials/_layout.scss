@@ -38,7 +38,7 @@ body{
       }
 
     .top-nav {
-        @include grid(6);
+        @include grid(8);
         @include break(tablet, 12);
         @include break(mobile, 12);
     }
