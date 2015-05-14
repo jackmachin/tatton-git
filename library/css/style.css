@@ -608,8 +608,6 @@ probably best not to use it. I mean, were you going to anyway? */
 
 /* col-spanOR DEFAULTS
 ========================================================================== */
-/* col-spanours -  Defined only once */
-/* Mark-up - selectors used throughout site. */
 /* ==========================================================================
 // Mixin File
 // Usefull mixins & re-usable code.
@@ -848,14 +846,14 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 .blue-btn, .comment-reply-link, #submit {
-  background-color: #82d2e5; }
+  background-color: #2980b9; }
   .blue-btn:hover,
   .comment-reply-link:hover,
   #submit:hover,
   .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
-    background-color: #71cce1; }
+    background-color: #2574a8; }
   .blue-btn:active, .comment-reply-link:active, #submit:active {
-    background-color: #6dcae1; }
+    background-color: #2472a4; }
 
 /******************************************************************
 Site Name:
@@ -1250,7 +1248,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
-  color: #c1d72e;
+  color: #7ea088;
   /*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -1335,7 +1333,7 @@ nav {
         .nav li ul.sub-menu li a,
         .nav li ul.children li a {
           background-color: #f8f9fa;
-          color: #82d2e5; }
+          color: #2980b9; }
 
 /* end .top-nav */
 .mobile-nav {
@@ -1379,7 +1377,7 @@ nav {
         .mobile-nav li ul.sub-menu li a,
         .mobile-nav li ul.children li a {
           background-color: #f8f9fa;
-          color: #82d2e5; }
+          color: #2980b9; }
   .mobile-nav .menu-item:nth-child(4n-2) ul.sub-menu {
     margin: 0 -100%; }
   .mobile-nav .menu-item:nth-child(4n-1) ul.sub-menu {
@@ -1468,7 +1466,7 @@ POSTS & CONTENT STYLES
       border-right: 0; }
   .entry-content blockquote {
     padding: 0 0 0 0.75em;
-    border-left: 3px solid #82d2e5;
+    border-left: 3px solid #2980b9;
     font-style: italic;
     color: #9fa6b4; }
   .entry-content dd {
@@ -1630,9 +1628,9 @@ PAGE NAVI STYLES
     padding: 0.75em;
     min-width: 1em;
     display: block;
-    color: #82d2e5; }
+    color: #2980b9; }
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-      background-color: #82d2e5;
+      background-color: #2980b9;
       color: #fff; }
   .pagination .current {
     cursor: default;
@@ -1760,7 +1758,7 @@ COMMENT STYLES
       border-right: 0; }
   .comment_content blockquote {
     padding: 0 0 0 0.75em;
-    border-left: 3px solid #82d2e5;
+    border-left: 3px solid #2980b9;
     font-style: italic;
     color: #9fa6b4; }
   .comment_content dd {
@@ -2003,7 +2001,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/ }
         .nav li a:hover, .nav li a:focus {
-          color: #c1d72e; }
+          color: #7ea088; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
