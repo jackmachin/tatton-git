@@ -672,11 +672,25 @@ body {
       width: 98%;
       margin: 1%; } }
 
+.logo-container {
+  float: left;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%; }
+  @media only screen and (max-width: 480px) {
+    .logo-container {
+      width: 23%;
+      margin: 1%; } }
+
 #sidebar-header {
   float: left;
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
+  @media only screen and (max-width: 480px) {
+    #sidebar-header {
+      width: 73%;
+      margin: 1%; } }
 
 .top-nav {
   float: left;

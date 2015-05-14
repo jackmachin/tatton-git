@@ -31,10 +31,14 @@ body{
 
     #inner-header {}
 
-      .logo-container {}
+      .logo-container {
+        @include grid (12);
+        @include break(mobile, 3);
+      }
 
       #sidebar-header {
           @include grid(12);
+          @include break(mobile, 9);
       }
 
     .top-nav {
