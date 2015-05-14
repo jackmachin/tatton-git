@@ -57,6 +57,4 @@
                 <?php get_sidebar ('header');?>
             </div>
 
-
-
         </header>
