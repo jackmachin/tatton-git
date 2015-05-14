@@ -339,6 +339,10 @@ POSTS & CONTENT STYLES
                 margin-bottom: 0;
             }
 
+            p:first-of-type {
+                font-size:1.6666666667em;
+            }
+
 
 			ul, ol, table, dl {}
 
@@ -508,12 +512,6 @@ POSTS & CONTENT STYLES
 	.tags {
 		margin: 0;
 	}
-
-.page-template-about-page {
-    p:first-of-type {
-        font-size:1.6666666667em;
-    }
-}
 
 /******************************************************************
 POST FORMATS

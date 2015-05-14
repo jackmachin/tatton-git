@@ -1442,6 +1442,8 @@ POSTS & CONTENT STYLES
 			*/ }
   .entry-content p {
     margin-bottom: 0; }
+  .entry-content p:first-of-type {
+    font-size: 1.6666666667em; }
   .entry-content ul, .entry-content ol {
     margin-left: 2em; }
   .entry-content ul {
@@ -1519,9 +1521,6 @@ POSTS & CONTENT STYLES
 /* gallery caption styles */
 .tags {
   margin: 0; }
-
-.page-template-about-page p:first-of-type {
-  font-size: 1.6666666667em; }
 
 /******************************************************************
 POST FORMATS
