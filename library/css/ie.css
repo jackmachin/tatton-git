@@ -195,8 +195,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/ }
       .nav li a:hover, .nav li a:focus {
-        color: #fff;
-        text-decoration: underline; }
+        color: #7ea088; }
     .nav li ul.sub-menu,
     .nav li ul.children {
       margin-top: 0;
