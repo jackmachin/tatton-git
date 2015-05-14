@@ -242,7 +242,7 @@ NAVIGATION STYLES
 /*********************
 MAIN CONTENT
 *********************/
-.page-template-home-page #inner-content {
+.home-container {
   background: url("/wp-content/themes/tatton/library/images/big_tree.jpg"); }
 
 .home-content {

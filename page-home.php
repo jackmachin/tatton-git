@@ -10,7 +10,7 @@
 
     <div id="content" class="wrapper">
 
-        <div id="inner-content" class="container">
+        <div id="inner-content" class="container home-container">
 
             <div class="main home-content"  role="main">
 
