@@ -181,6 +181,13 @@ NAVIGATION STYLES
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
+  .nav .top-nav {
+    background-color: #fff;
+    border-radius: 0;
+    padding: 0;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; }
   .nav li {
     /*
 		plan your menus and drop-downs wisely.
