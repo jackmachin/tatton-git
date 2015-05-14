@@ -1,7 +1,7 @@
 <nav role="navigation">
 
   <?php wp_nav_menu(array(
-    'container' => 'div',                           // remove nav container
+    'container' => false,                           // remove nav container
     'container_class' => 'wrapper',                 // class of container (should you choose to use it)
     'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
     'menu_class' => 'nav top-nav cf',               // adding custom nav class
