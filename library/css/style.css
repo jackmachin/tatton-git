@@ -1512,7 +1512,7 @@ POSTS & CONTENT STYLES
   .entry-content tr {
     border-bottom: 1px solid #eaedf2; }
     .entry-content tr:nth-child(even) {
-      background-color: #f8f9fa; }
+      background-color: #B2C6B8; }
   .entry-content td {
     padding: 7px;
     border-right: 1px solid #eaedf2;
@@ -1522,7 +1522,7 @@ POSTS & CONTENT STYLES
     .entry-content td p {
       margin: 1em 0; }
   .entry-content th {
-    background-color: #f8f9fa;
+    background-color: #B2C6B8;
     border-bottom: 1px solid #eaedf2;
     border-right: 1px solid #eaedf2; }
     .entry-content th:last-child {
