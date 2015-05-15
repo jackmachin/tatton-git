@@ -403,6 +403,7 @@ POSTS & CONTENT STYLES
 			td {
 				padding: 7px;
 				border-right: 1px solid $gray;
+                vertical-align: middle;
 
 				&:last-child {
 					border-right: 0;

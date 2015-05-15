@@ -1515,7 +1515,8 @@ POSTS & CONTENT STYLES
       background-color: #f8f9fa; }
   .entry-content td {
     padding: 7px;
-    border-right: 1px solid #eaedf2; }
+    border-right: 1px solid #eaedf2;
+    vertical-align: middle; }
     .entry-content td:last-child {
       border-right: 0; }
   .entry-content th {
