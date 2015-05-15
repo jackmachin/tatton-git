@@ -1519,6 +1519,8 @@ POSTS & CONTENT STYLES
     vertical-align: middle; }
     .entry-content td:last-child {
       border-right: 0; }
+    .entry-content td p {
+      margin: 1em 0; }
   .entry-content th {
     background-color: #f8f9fa;
     border-bottom: 1px solid #eaedf2;
