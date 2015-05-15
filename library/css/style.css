@@ -1497,6 +1497,12 @@ POSTS & CONTENT STYLES
   .entry-content table {
     width: 100%;
     border: 1px solid #eaedf2; }
+    .entry-content table thead {
+      font-weight: 500;
+      font-size: 12px;
+      text-align: left;
+      color: #666;
+      background-color: #F2F6F3; }
     .entry-content table caption {
       margin: 0 0 7px;
       font-size: 0.75em;
