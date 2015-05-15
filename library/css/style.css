@@ -1502,7 +1502,7 @@ POSTS & CONTENT STYLES
       font-size: 12px;
       text-align: left;
       color: #666;
-      background-color: #F2F6F3; }
+      background-color: #B2C6B8; }
     .entry-content table caption {
       margin: 0 0 7px;
       font-size: 0.75em;
@@ -1512,7 +1512,7 @@ POSTS & CONTENT STYLES
   .entry-content tr {
     border-bottom: 1px solid #eaedf2; }
     .entry-content tr:nth-child(even) {
-      background-color: #B2C6B8; }
+      background-color: #f8f9fa; }
   .entry-content td {
     padding: 7px;
     border-right: 1px solid #eaedf2;

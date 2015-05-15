@@ -376,11 +376,11 @@ POSTS & CONTENT STYLES
 				border: 1px solid $gray;
 
                 thead {
-                font-weight: 500;
-  font-size: 12px;
-  text-align: left;
-  color: #666;
-  background-color: #F2F6F3;
+                    font-weight: 500;
+                    font-size: 12px;
+                    text-align: left;
+                    color: #666;
+                    background-color: #B2C6B8;
                 }
 
 				caption {
@@ -396,7 +396,7 @@ POSTS & CONTENT STYLES
 				border-bottom: 1px solid $gray;
 
 				&:nth-child(even) {
-					background-color: #B2C6B8;
+					background-color: $light-gray;
 				}
 			}
 
