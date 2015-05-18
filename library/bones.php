@@ -133,7 +133,7 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'guybrush-jQuery-finger', '//rawgit.com/ngryman/jquery.finger/v0.1.2/dist/jquery.finger.js');
 
 		// register main stylesheet
-		wp_register_style( 'guybrush-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+		wp_register_style( 'guybrush-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.min.css', array(), '', 'all' );
 
 		// ie-only style sheet
 		wp_register_style( 'guybrush-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );

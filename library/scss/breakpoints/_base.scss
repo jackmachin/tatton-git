@@ -680,7 +680,8 @@ PAGE NAVI STYLES
       border-right: 1px solid $gray;
     }
 
-    a, span {
+    a,
+    span {
       margin: 0;
       text-decoration: none;
       padding: 0;
@@ -692,10 +693,11 @@ PAGE NAVI STYLES
       display: block;
       color: $blue;
 
-      &:hover, &:focus {
-      	background-color: $blue;
-      	color: $white;
-      }
+        &:hover,
+        &:focus {
+            background-color: $blue;
+            color: $white;
+        }
     }
 
     .current{
