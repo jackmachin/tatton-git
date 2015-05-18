@@ -1974,8 +1974,6 @@ them in here, they won't work.
   /*********************
 NAVIGATION STYLES
 *********************/
-  body {
-    background-color: darkgoldenrod; }
   /* .menu is clearfixed inside mixins.scss */
   .menu {
     /* end .menu ul */ }
@@ -2044,6 +2042,8 @@ come into play. Have fun!
   /*********************
 GENERAL STYLES
 *********************/
+  body {
+    background-color: darkgoldenrod; }
   /*********************
 LAYOUT & GRID STYLES
 *********************/
