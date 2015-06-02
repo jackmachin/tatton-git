@@ -53,8 +53,9 @@
                     <?php // if you'd like to use the site description you can un-comment it below ?>
                     <?php // bloginfo('description'); ?>
                 </div>
-                <?php get_template_part ('partials/navigation');?>
+
                 <?php get_sidebar ('header');?>
+                <?php get_template_part ('partials/navigation');?>
             </div>
 
         </header>
