@@ -2062,6 +2062,7 @@ NAVIGATION STYLES
 		*/
       /* showing sub-menus */ }
       .nav li a {
+        float: left;
         border-bottom: 0;
         text-transform: uppercase;
         font-size: .8333333333333em;
