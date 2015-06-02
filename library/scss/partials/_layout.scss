@@ -37,13 +37,13 @@ body{
 
 
         .top-nav {
-            @include grid(6);
+            @include grid(12);
             @include break(tablet, 9);
             @include break(mobile, 9);
         }
 
         #sidebar-header {
-            @include grid(3);
+            @include grid(3, $push:6);
         }
 
   #content {

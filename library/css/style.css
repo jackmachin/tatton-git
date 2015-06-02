@@ -685,7 +685,7 @@ body {
 
 .top-nav {
   float: left;
-  width: 48%;
+  width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
   @media only screen and (max-width: 767px) {
@@ -700,8 +700,7 @@ body {
 #sidebar-header {
   float: left;
   width: 23%;
-  margin-left: 1%;
-  margin-right: 1%; }
+  margin-left: 51%; }
 
 #content {
   float: left;
