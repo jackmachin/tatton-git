@@ -60,18 +60,11 @@ body{
 
       #main, .main {}
 
-    .main-content,
-    .news {
+    .main {
         @include grid(8);
         @include break(tablet, 12);
         @include break(mobile, 12);
     }
-
-        .home-content {
-            @include grid(5, $push:7);
-            @include break(tablet, 12);
-            @include break(mobile, 12);
-        }
 
 .profile {
     @include grid(12);
