@@ -170,9 +170,6 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-.header {
-  background: url("/wp-content/themes/tatton/library/images/left_fold.png") no-repeat right top; }
-
 #sidebar-header {
   display: block; }
 
