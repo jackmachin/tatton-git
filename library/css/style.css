@@ -1870,7 +1870,8 @@ FOOTER STYLES
 .footer {
   padding: 1em;
   border: 1px solid #B2C6B8;
-  border-radius: .5em; }
+  border-radius: .5em;
+  margin-top: 1.5em; }
 
 .copyright {
   color: #7ea088; }
