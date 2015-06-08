@@ -168,6 +168,18 @@ HEADER STYLES
   background-repeat: repeat-x;
 }
 
+.header:before,
+.header:after {
+  content: "";
+  position: absolute;
+  /* fill vertically */
+  top: 0;
+  bottom: 0;
+  width: 9600px;
+  right: 100%;
+  background: green;
+}
+
 	.logo {
 		  margin-top: 1.5em;
 
