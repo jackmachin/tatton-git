@@ -95,9 +95,8 @@ img {
 * + * {
   margin-top: 1.5em; }
 
-#wpadminbar {
-  margin-top: 0; }
-
+#wpadminbar,
+#sidebar-header,
 li + li {
   margin-top: 0; }
 
@@ -1326,8 +1325,7 @@ HEADER STYLES
   background-repeat: repeat-x; }
 
 #sidebar-header {
-  display: none;
-  margin-top: 0; }
+  display: none; }
 
 /*********************
 NAVIGATION STYLES

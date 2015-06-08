@@ -92,16 +92,11 @@ img {
 	margin-top: 1.5em;
 }
 
-// Fix for admin bar
-
-#wpadminbar {
-  margin-top: 0;
-}
-
-// Fix for LI
-
+// Exclusions
+#wpadminbar,
+#sidebar-header,
 li  + li {
-margin-top: 0;
+  margin-top: 0;
 }
 
 /* ==========================================================================
