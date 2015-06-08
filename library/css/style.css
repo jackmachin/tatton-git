@@ -1326,7 +1326,8 @@ HEADER STYLES
   background-repeat: repeat-x; }
 
 #sidebar-header {
-  display: none; }
+  display: none;
+  margin-top: 0; }
 
 /*********************
 NAVIGATION STYLES
