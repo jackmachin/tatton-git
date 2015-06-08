@@ -25,9 +25,7 @@ body{
 
   .header {}
 
-    #inner-header {
-        @include grid(12, $margin:0);
-    }
+    #inner-header {}
 
         .logo-container {
             @include grid (4);
@@ -44,7 +42,6 @@ body{
             @include grid(3, $push:6);
         }
     #inner-content {
-      @include grid(12, $margin:0);
     }
 
         .full {
@@ -83,7 +80,3 @@ body{
             @include break(tablet, 12);
             @include break(mobile, 12);
        }
-
-  .footer {
-    @include grid (12);
-  }

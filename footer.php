@@ -1,6 +1,6 @@
-            <footer class="footer" role="contentinfo">
+            <footer class="footer wrapper" role="contentinfo">
 
-				<div id="inner-footer" class="wrapper">
+				<div id="inner-footer">
 
 					<?php if ( wp_is_mobile() ) {}
 
