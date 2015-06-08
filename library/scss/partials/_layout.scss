@@ -39,8 +39,9 @@ body{
         }
 
         #sidebar-header {
-            @include grid(3, $push:6);
+            @include grid(3, $push:5);
         }
+
     #inner-content {}
 
         .full {
