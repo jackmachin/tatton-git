@@ -663,11 +663,11 @@ body {
     display: table;
     clear: both; }
 
-.header {
+#inner-header {
   float: left;
-  width: 98%;
-  margin-left: 1%;
-  margin-right: 1%; }
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
 
 .logo-container {
   float: left;
