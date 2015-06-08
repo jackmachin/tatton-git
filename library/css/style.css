@@ -1349,9 +1349,6 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-nav {
-  background-color: #fff; }
-
 .top-nav {
   background-color: rgba(242, 246, 243, 0.9);
   border: 1px solid rgba(126, 160, 136, 0.7);
@@ -1369,7 +1366,6 @@ nav {
   column-rule: 1px outset rgba(126, 160, 136, 0.5); }
 
 .nav {
-  margin: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
