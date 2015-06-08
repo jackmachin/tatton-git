@@ -1338,6 +1338,22 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
+.header {
+  border-bottom: 1px solid #7ea088;
+  margin: 0px;
+  background: #eeeeee;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background: -webkit-linear-gradient(#fff, #eee);
+  background: -moz-linear-gradient(center top, #fff 0px, #fff 2px, #eee 50px);
+  background: -ms-linear-gradient(#fff, #eee);
+  background: -o-linear-gradient(top, #fff, #eee);
+  background: linear-gradient(#fff, #eee);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fff, endColorstr=#eee);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#55FFFFFF, endColorstr=#55EEEEEE);
+  background-repeat: repeat-x;
+  box-shadow: none;
+  overflow: hidden; }
+
 #logo {
   margin: 0; }
 
@@ -1359,7 +1375,6 @@ and more scalable.
   border: 1px solid rgba(126, 160, 136, 0.7);
   border-radius: .5em;
   margin-top: 1.5em;
-  margin-bottom: 0;
   padding: 1em;
   -moz-column-count: 3;
   -webkit-column-count: 3;
