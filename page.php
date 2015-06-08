@@ -1,42 +1,36 @@
 <?php get_header(); ?>
 
-			<div id="content" class="wrapper">
+    <div id="content" class="wrapper">
 
-				<div id="inner-content" class="container">
+        <div id="inner-content" class="container">
 
-						<div id="main" role="main">
+            <div class="main main-content test"  role="main">
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
-                                <?php get_template_part ('partials/article-header')?>
+                        <div class="entry-content cf" itemprop="articleBody">
+                            <?php
+                                // the content (pretty self explanatory huh)
+                                the_content();
+                            ?>
+                        </div>
 
-								<div class="entry-content" itemprop="articleBody">
-									<?php
-										// the content (pretty self explanatory huh)
-										the_content();
-									?>
-								</div> <?php // end article section ?>
+                    </article>
 
-                                <?php get_template_part ('partials/article-footer')?>
+                <?php endwhile; else : ?>
 
-								<?php comments_template(); ?>
+                    <?php get_template_part ('partials/no-post-found');?>
 
-							</article>
+                <?php endif; ?>
 
-							<?php endwhile; else : ?>
+            </div>
 
-                                <?php get_template_part ('partials/no-post-found');?>
+            <?php get_sidebar(); ?>
 
-							<?php endif; ?>
+        </div>
 
-						</div>
-
-						<?php get_sidebar(); ?>
-
-				</div>
-
-			</div>
+    </div>
 
 <?php get_footer(); ?>
