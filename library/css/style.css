@@ -1343,8 +1343,8 @@ HEADER STYLES
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#55FFFFFF, endColorstr=#55EEEEEE);
   background-repeat: repeat-x; }
 
-#logo {
-  margin: 0; }
+.logo {
+  margin-top: 1.5em; }
 
 #sidebar-header {
   display: none; }
