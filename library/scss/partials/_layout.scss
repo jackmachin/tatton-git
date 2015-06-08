@@ -31,15 +31,12 @@ body{
 
         .logo-container {
             @include grid (4);
-            @include break(tablet, 3);
-            @include break(mobile, 3);
+            @include break(mobile, 12);
         }
 
 
         .top-nav {
             @include grid(12);
-            @include break(tablet, 9);
-            @include break(mobile, 9);
         }
 
         #sidebar-header {

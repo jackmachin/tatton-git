@@ -674,13 +674,9 @@ body {
   width: 31.33333%;
   margin-left: 1%;
   margin-right: 1%; }
-  @media only screen and (max-width: 767px) {
-    .logo-container {
-      width: 23%;
-      margin: 1%; } }
   @media only screen and (max-width: 480px) {
     .logo-container {
-      width: 23%;
+      width: 98%;
       margin: 1%; } }
 
 .top-nav {
@@ -688,14 +684,6 @@ body {
   width: 98%;
   margin-left: 1%;
   margin-right: 1%; }
-  @media only screen and (max-width: 767px) {
-    .top-nav {
-      width: 73%;
-      margin: 1%; } }
-  @media only screen and (max-width: 480px) {
-    .top-nav {
-      width: 73%;
-      margin: 1%; } }
 
 #sidebar-header {
   float: left;
