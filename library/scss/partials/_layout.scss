@@ -33,11 +33,12 @@ body{
             @include break(mobile, 12);
         }
 
-
-        .top-nav {}
-
         #sidebar-header {
             @include grid(4, $push:4);
+        }
+
+        .top-nav {
+            include grid (12)
         }
 
     #inner-content {}
