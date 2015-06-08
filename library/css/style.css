@@ -1332,7 +1332,6 @@ HEADER STYLES
 *********************/
 .header {
   border-bottom: 1px solid #7ea088;
-  margin: 0px;
   background: #eeeeee;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
   background: -webkit-linear-gradient(#fff, #eee);
@@ -1342,9 +1341,7 @@ HEADER STYLES
   background: linear-gradient(#fff, #eee);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fff, endColorstr=#eee);
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#55FFFFFF, endColorstr=#55EEEEEE);
-  background-repeat: repeat-x;
-  box-shadow: none;
-  overflow: hidden; }
+  background-repeat: repeat-x; }
 
 #logo {
   margin: 0; }
