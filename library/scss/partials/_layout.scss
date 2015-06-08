@@ -39,7 +39,7 @@ body{
         }
 
         #sidebar-header {
-            @include grid(3, $push:5);
+            @include grid(4, $push:4);
         }
 
     #inner-content {}
