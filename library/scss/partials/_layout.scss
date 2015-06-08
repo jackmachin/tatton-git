@@ -71,9 +71,9 @@ body{
 }
 
 .profile-image {
-            @include grid(4);
-            @include break(tablet, 12);
-            @include break(mobile, 12);
+    @include grid(4);
+    @include break(tablet, 12);
+    @include break(mobile, 12);
 }
 
 .profile-bio {
