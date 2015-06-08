@@ -2026,12 +2026,13 @@ HEADER STYLES
 NAVIGATION STYLES
 *********************/
   .top-nav {
-    background-color: #fff;
+    background-color: inherit;
     border-radius: 0;
     padding: 0;
     -moz-column-count: 1;
     -webkit-column-count: 1;
-    column-count: 1; }
+    column-count: 1;
+    margin-bottom: 0; }
   .nav {
     border: 0;
     /* end .menu ul li */
