@@ -181,20 +181,21 @@ and more scalable.
 */
 
 .top-nav {
-  background-color: rgba(242, 246, 243, 0.9);
-  border: 1px solid rgba(126, 160, 136, 0.7);
-  border-radius: .5em;
-  margin-bottom: 0;
-  padding: 1em;
-  -moz-column-count: 3;
-  -webkit-column-count: 3;
-  column-count: 3;
-  -moz-column-gap: 33%;
-  -webkit-column-gap: 33%;
-  column-gap: 33%;
-  -moz-column-rule: 1px outset rgba(126, 160, 136, 0.5);
-  -webkit-column-rule: 1px outset rgba(126, 160, 136, 0.5);
-  column-rule: 1px outset rgba(126, 160, 136, 0.5);
+    background-color: rgba(242, 246, 243, 0.9);
+    border: 1px solid rgba(126, 160, 136, 0.7);
+    border-radius: .5em;
+    margin-top:1.5em;
+    margin-bottom: 0;
+    padding: 1em;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 33%;
+    -webkit-column-gap: 33%;
+    column-gap: 33%;
+    -moz-column-rule: 1px outset rgba(126, 160, 136, 0.5);
+    -webkit-column-rule: 1px outset rgba(126, 160, 136, 0.5);
+    column-rule: 1px outset rgba(126, 160, 136, 0.5);
 }
 
 .nav {
