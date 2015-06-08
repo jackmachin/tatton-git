@@ -39,11 +39,11 @@
 
 	</head>
 
-	<body <?php body_class('wrapper'); ?>>
+	<body <?php body_class(); ?>>
 
         <header class="header cf" role="banner">
 
-            <div id="inner-header">
+            <div id="inner-header" class="wrapper">
                 <div class="logo-container">
                     <?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
                     <a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="<?php bloginfo('name'); ?>" class="logo"></a>

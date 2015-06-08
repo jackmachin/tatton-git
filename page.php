@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-    <div id="content" class="container">
+    <div id="content">
 
-        <div id="inner-content">
+        <div id="inner-content" class="wrapper">
 
             <div class="main main-content test"  role="main">
 
