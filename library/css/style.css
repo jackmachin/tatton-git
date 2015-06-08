@@ -702,6 +702,12 @@ body {
   width: 23%;
   margin-left: 51%; }
 
+#inner-content {
+  float: left;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
+
 .full {
   float: left;
   width: 98%;

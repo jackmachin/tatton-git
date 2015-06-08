@@ -45,7 +45,9 @@ body{
         #sidebar-header {
             @include grid(3, $push:6);
         }
-    #inner-content {}
+    #inner-content {
+      @include grid(12, $margin:0);
+    }
 
         .full {
             @include grid (12);
